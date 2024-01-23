@@ -18,4 +18,11 @@ fn main() {
         println!("{}", y);
         y -= 1; // every loop, subtract 1 from y
     } // prints 9 8 7 6
+
+    let x = 8;
+    match x { // compares to the values on left side
+        0..=7 => println!("from 0 to 7"), // use commas!
+        8 => println!("x equals 8"),
+        _ => println!("another value") // _ means default, no comma!
+    }
 }
